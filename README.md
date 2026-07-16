@@ -10,6 +10,8 @@
 
 ![Profile views](https://komarev.com/ghpvc/?username=PPrauchner&color=0A66C2&style=flat-square&label=visitas)
 
+**[🇧🇷 Português](README.md) · [🇺🇸 English](README.en.md)**
+
 </div>
 
 Curso Engenharia de Software e gosto de tirar uma ideia do papel e ver ela funcionando de ponta a ponta — do backend ao frontend, passando por automação e, mais recentemente, por integrações com LLMs. A maior parte do que sei veio de projetos próprios, projetos acadêmicos em equipe e desafios técnicos reais.
