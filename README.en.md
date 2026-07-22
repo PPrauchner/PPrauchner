@@ -1,79 +1,91 @@
 <div align="center">
 
-# Hi, I'm Pietro 👋
+# Pietro Prauchner
 
-### Software Engineering Student · Curious about automation, data and AI
+### Full-stack developer focused on Python backend and applied AI
+
+**Looking for a software engineering internship — Alegrete/RS (Brazil) or remote · evening degree program**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pietroprauchner/)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pietro.mprauchner@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PPrauchner)
-
-![Profile views](https://komarev.com/ghpvc/?username=PPrauchner&color=0A66C2&style=flat-square&label=profile%20views)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pietro.mprauchner@gmail.com)
+[![Lattes](https://img.shields.io/badge/Lattes_CV-0A5C9E?style=for-the-badge&logoColor=white)](http://lattes.cnpq.br/8153919281360932)
 
 **[🇧🇷 Português](README.md) · [🇺🇸 English](README.en.md)**
 
 </div>
 
-I'm studying Software Engineering and I like taking an idea off paper and watching it work end to end — from backend to frontend, through automation and, more recently, LLM integrations. Most of what I know comes from personal projects, team academic projects, and real technical challenges.
+Software Engineering student at **UNIPAMPA — Alegrete/RS, Brazil**, in the 4th of 9 semesters (expected graduation: mid-2029). I like taking an idea off paper and watching it work end to end: gathering the requirements, designing the architecture, writing the code — and leaving the project organized enough that someone else can step into it the next day.
 
 ---
 
-## 🚀 Featured Projects
+## 💼 Experience
+
+**Extension Research Fellow — AI Horizon Labs / UNIPAMPA** · 2026 – present · 20h/week
+
+Project *Educador 5.0: Training Teachers to Use Artificial Intelligence in Basic Education*. I work on-site in the continuing education of K-12 teachers, translating AI tools into practical classroom use.
+
+---
+
+## 🚀 Featured projects
 
 ### [SAGA — Academic Monitoring and Management System](https://github.com/PPrauchner/SAGA-Sistema-de-Acompanhamento-e-Gestao-Academica)
-Full management system for graduate programs: student registration, work plans, credit validation, extensions and management reports. Team project (6 members) for the Problem Solving III course, combining a **logic inference engine built from scratch in Python** with **Aspect-Oriented Programming** for authorization, auditing and alerts.
 
-`Python` `FastAPI` `React` `TypeScript` `Firebase`
+Management system for graduate programs: student registration, work plans, credit validation, deadline extensions and management reports. Six-person team project, featuring a **logic inference engine built from scratch in Python** and **Aspect-Oriented Programming** for authorization, auditing and alerts.
 
-### [LazyPR](https://github.com/PPrauchner/LazyPR-Grupo-06)
-Functional analysis platform for GitHub pull requests: lazy ingestion of large datasets, a fully functional pipeline (pure functions, composition, `map`/`filter`/`reduce`) and semantic classification via LLM (Groq/Llama) — PR nature, description clarity and project type. Team project, with interactive dashboards built in Streamlit.
+> **My role:** top contributor to the repository (307 commits). I gathered the requirements, organized the team's work and wrote most of the issues and documentation. I **designed the inference engine's architecture** — the split between terms, unification, substitution, resolver and knowledge base — and wrote the **declarative rule layer (RL01–RL05)** and the **test suite** the team implemented against. I reviewed half of the pull requests and worked across backend, frontend and database.
 
-`Python` `LLM` `Streamlit` `Functional Programming`
+`Python` `FastAPI` `React` `TypeScript` `Firebase` `pytest`
 
-### [Maria Dinoir's Website — Therapist](https://github.com/PPrauchner/Site-de-terapeuta)
-Professional website for a real therapist, from briefing to delivery: institutional pages, interactive FAQ, modals and WhatsApp scheduling. Started in plain HTML/CSS and later migrated the project to Astro, reorganizing the entire CSS into my own design system.
+### [ORÁCULO — Python dependency auditing](https://github.com/PPrauchner/Oraculo)
 
-`Astro` `HTML5` `CSS3` `TypeScript`
+Web tool that cross-references what a project **declares** it depends on (`pyproject.toml`, `requirements.txt`, `environment.yml`) against what the code **actually imports**, via AST analysis, and checks both against PyPI. It reports *Zombies* (declared but never used), *Ghosts* (imported but never declared) and outdated packages, with size, age and a Health Index.
 
-### [mini-simulador-edge-cloud](https://github.com/PPrauchner/mini-simulador-edge-cloud)
-Python simulator for task allocation in Edge-Cloud infrastructure, built as a technical challenge for a scholarship process. *(work in progress)*
+> **My role:** 227 of the repository's 238 commits — effectively my own project. Core fully decoupled from the UI, parsers registered by decorator, test suite, internationalization (pt/en) and documented architecture decisions.
 
-`Python`
+`Python` `Streamlit` `Plotly` `AST` `uv`
 
----
+### [LazyPR — functional analysis of pull requests](https://github.com/PPrauchner/LazyPR-Grupo-06)
 
-## 🛠️ Technologies
+Platform that lazily ingests large GitHub pull request datasets and classifies them semantically via LLM (Groq/Llama): nature of the change, description clarity and project type. Fully functional pipeline — pure functions, composition, `map`/`filter`/`reduce` — with interactive dashboards.
 
-<div align="center">
+> **My role:** top contributor to the repository (56 commits). I built the **LLM integration layer** — prompt engineering, retry logic and Groq rate-limit handling — along with the classifiers for change nature, description clarity and project type, plus the **multi-level cache with atomic disk persistence**. I wrote half of the test suite and handled requirements, team organization, issues and PR review.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Astro](https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
-
-## 📊 GitHub
-
-<div align="center">
-
-![Pietro's GitHub stats](https://github-readme-stats.vercel.app/api?username=PPrauchner&show_icons=true&theme=default&hide_border=true&locale=en)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PPrauchner&layout=compact&hide_border=true&locale=en)
-
-</div>
+`Python` `LLM (Groq/Llama)` `Streamlit` `Functional Programming`
 
 ---
 
-## 🌱 Currently learning
+## 📌 Other projects
 
-Process automation, applied artificial intelligence and solid software architecture practices — always with a new hands-on project in the works.
+- **[Maria Dinoir's Website — Therapist](https://github.com/PPrauchner/Site-de-terapeuta)** · **[🔗 live](https://maria-dinoir-terapeuta.com/)** — professional website for a real client, from briefing to delivery: institutional pages, interactive FAQ, modals and WhatsApp scheduling. Started in plain HTML/CSS and later migrated to Astro, reorganizing the entire CSS into a design system of my own. `Astro` `TypeScript` `CSS`
+- **[mini-simulador-edge-cloud](https://github.com/PPrauchner/mini-simulador-edge-cloud)** — simulator for task allocation across Edge-Cloud infrastructure, built as a technical challenge for a research fellowship process. `Python`
 
-<div align="center">
-<sub>Profile under construction — always learning something new 🚀</sub>
-</div>
+---
+
+## ⚙️ How I work
+
+I treat small projects with the same process as large ones — that's what lets someone else (or me, three months later) actually step into them.
+
+- **Issues and pull requests even on solo projects.** Over the last 12 months: ~1,200 contributions, 52 PRs and 205 issues.
+- **Written decisions.** Every project has a `CONTEXT.md` with the domain model and ADRs under `docs/adr/` recording decisions and their rationale — the source of truth before implementing.
+- **Atomic commits** and coding conventions versioned alongside the project.
+- **Automating my own workflow.** I maintain [`.claude-generica`](https://github.com/PPrauchner/.claude-generica), the skills, hooks and rules I use to standardize PR review, issue creation and commits. That's the base I adapted to organize the team's workflow on SAGA.
+
+---
+
+## 🛠️ Stack
+
+**Backend**  Python · FastAPI · Firebase
+
+**Frontend**  TypeScript · React · Astro · HTML/CSS
+
+**Data & AI**  LLM integration (Groq/Llama) · AST analysis · Streamlit · Plotly
+
+**Practices**  Git · issues and code review · pytest · uv · ADRs
+
+---
+
+## 📫 Contact
+
+Looking for a software engineering internship, **in Alegrete/RS (Brazil) or remote**. My degree program runs in the evening — I'm available during the day.
+
+**[LinkedIn](https://www.linkedin.com/in/pietroprauchner/)** · **[Email](mailto:pietro.mprauchner@gmail.com)** · **[Lattes CV](http://lattes.cnpq.br/8153919281360932)**

@@ -1,79 +1,91 @@
 <div align="center">
 
-# Olá, eu sou o Pietro 👋
+# Pietro Prauchner
 
-### Estudante de Engenharia de Software · Curioso por automação, dados e IA
+### Desenvolvedor full-stack com foco em backend Python e IA aplicada
+
+**Buscando estágio em desenvolvimento — Alegrete/RS ou remoto · curso noturno**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pietroprauchner/)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pietro.mprauchner@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PPrauchner)
-
-![Profile views](https://komarev.com/ghpvc/?username=PPrauchner&color=0A66C2&style=flat-square&label=visitas)
+[![E-mail](https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pietro.mprauchner@gmail.com)
+[![Lattes](https://img.shields.io/badge/Currículo_Lattes-0A5C9E?style=for-the-badge&logoColor=white)](http://lattes.cnpq.br/8153919281360932)
 
 **[🇧🇷 Português](README.md) · [🇺🇸 English](README.en.md)**
 
 </div>
 
-Curso Engenharia de Software e gosto de tirar uma ideia do papel e ver ela funcionando de ponta a ponta — do backend ao frontend, passando por automação e, mais recentemente, por integrações com LLMs. A maior parte do que sei veio de projetos próprios, projetos acadêmicos em equipe e desafios técnicos reais.
+Estudante de Engenharia de Software na **UNIPAMPA — campus Alegrete/RS**, no 4º de 9 semestres (conclusão prevista para 2029/1). Gosto de tirar uma ideia do papel e ver ela funcionando de ponta a ponta: levantar os requisitos, desenhar a arquitetura, escrever o código — e deixar o projeto organizado o suficiente para outra pessoa entrar nele no dia seguinte.
+
+---
+
+## 💼 Experiência
+
+**Bolsista de extensão — AI Horizon Labs / UNIPAMPA** · 2026 – atual · 20h semanais
+
+Projeto *Educador 5.0: Capacitação de Professores para o Uso de Inteligência Artificial na Educação Básica*. Atuo presencialmente na formação continuada de professores da Educação Básica, traduzindo ferramentas de IA em uso prático de sala de aula.
 
 ---
 
 ## 🚀 Projetos em destaque
 
 ### [SAGA — Sistema de Acompanhamento e Gestão Acadêmica](https://github.com/PPrauchner/SAGA-Sistema-de-Acompanhamento-e-Gestao-Academica)
-Sistema completo de gestão para programas de mestrado: cadastro de discentes, plano de trabalho, validação de créditos, prorrogações e relatórios gerenciais. Projeto em equipe (6 integrantes) para a disciplina de Resolução de Problemas III, combinando um **motor de inferência lógica construído do zero em Python** com **Programação Orientada a Aspectos** para autorização, auditoria e alertas.
 
-`Python` `FastAPI` `React` `TypeScript` `Firebase`
+Sistema de gestão para programas de pós-graduação: cadastro de discentes, plano de trabalho, validação de créditos, prorrogações e relatórios gerenciais. Projeto em equipe de 6 pessoas, com um **motor de inferência lógica construído do zero em Python** e **Programação Orientada a Aspectos** para autorização, auditoria e alertas.
 
-### [LazyPR](https://github.com/PPrauchner/LazyPR-Grupo-06)
-Plataforma de análise funcional de pull requests do GitHub: ingestão *lazy* de datasets grandes, pipeline 100% funcional (funções puras, composição, `map`/`filter`/`reduce`) e classificação semântica via LLM (Groq/Llama) — natureza do PR, clareza da descrição e tipo de projeto. Projeto em equipe, com dashboards interativos em Streamlit.
+> **Meu papel:** maior contribuidor do repositório (307 commits). Levantei os requisitos, organizei o trabalho da equipe e escrevi a maior parte das issues e da documentação. **Desenhei a arquitetura do motor de inferência** — a separação entre termos, unificação, substituição, resolvedor e base de conhecimento — e escrevi a **camada de regras declarativas (RL01–RL05)** e a **suíte de testes** contra a qual o time implementou. Revisei metade dos PRs e trabalhei no back-end, no front-end e no banco.
 
-`Python` `LLM` `Streamlit` `Programação Funcional`
+`Python` `FastAPI` `React` `TypeScript` `Firebase` `pytest`
 
-### [Site da Maria Dinoir — Terapeuta](https://github.com/PPrauchner/Site-de-terapeuta)
-Site profissional para uma terapeuta real, do briefing à entrega: páginas institucionais, FAQ interativa, modais e agendamento via WhatsApp. Comecei em HTML/CSS puro e depois migrei o projeto para Astro, reorganizando todo o CSS em um design system próprio.
+### [ORÁCULO — auditoria de dependências Python](https://github.com/PPrauchner/Oraculo)
 
-`Astro` `HTML5` `CSS3` `TypeScript`
+Ferramenta web que cruza o que um projeto **declara** depender (`pyproject.toml`, `requirements.txt`, `environment.yml`) com o que o código **realmente importa**, via análise de AST, e confronta os dois com o PyPI. Reporta *Zumbis* (declaradas e nunca usadas), *Fantasmas* (importadas e nunca declaradas) e desatualizadas, com métricas de tamanho, idade e um Índice de Saúde.
 
-### [mini-simulador-edge-cloud](https://github.com/PPrauchner/mini-simulador-edge-cloud)
-Simulador em Python de alocação de tarefas em infraestrutura Edge-Cloud, feito como desafio técnico para um processo de bolsa. *(em desenvolvimento)*
+> **Meu papel:** 227 dos 238 commits do repositório — na prática, meu projeto. Núcleo desacoplado da interface, parsers registrados por decorador, suíte de testes, internacionalização (pt/en) e as decisões de arquitetura documentadas.
 
-`Python`
+`Python` `Streamlit` `Plotly` `AST` `uv`
 
----
+### [LazyPR — análise funcional de pull requests](https://github.com/PPrauchner/LazyPR-Grupo-06)
 
-## 🛠️ Tecnologias
+Plataforma que ingere datasets grandes de pull requests do GitHub de forma *lazy* e os classifica semanticamente via LLM (Groq/Llama): natureza da mudança, clareza da descrição e tipo de projeto. Pipeline inteiramente funcional — funções puras, composição, `map`/`filter`/`reduce` — com dashboards interativos.
 
-<div align="center">
+> **Meu papel:** maior contribuidor do repositório (56 commits). Implementei a **camada de integração com o LLM** — engenharia de prompt, *retry* e tratamento do *rate limit* do Groq — e as funções de classificação de natureza, clareza e tipo de projeto, além do **cache multinível com persistência atômica em disco**. Escrevi metade dos testes e cuidei dos requisitos, da organização da equipe, das issues e da revisão dos PRs.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Astro](https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
-
-## 📊 GitHub
-
-<div align="center">
-
-![Pietro's GitHub stats](https://github-readme-stats.vercel.app/api?username=PPrauchner&show_icons=true&theme=default&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PPrauchner&layout=compact&hide_border=true)
-
-</div>
+`Python` `LLM (Groq/Llama)` `Streamlit` `Programação Funcional`
 
 ---
 
-## 🌱 Aprendendo agora
+## 📌 Outros projetos
 
-Automação de processos, inteligência artificial aplicada e boas práticas de arquitetura de software — sempre com um projeto novo para colocar a mão na massa.
+- **[Site da Maria Dinoir — Terapeuta](https://github.com/PPrauchner/Site-de-terapeuta)** · **[🔗 no ar](https://maria-dinoir-terapeuta.com/)** — site profissional para uma cliente real, do briefing à entrega: páginas institucionais, FAQ interativa, modais e agendamento por WhatsApp. Comecei em HTML/CSS puro e migrei para Astro, reorganizando todo o CSS em um design system próprio. `Astro` `TypeScript` `CSS`
+- **[mini-simulador-edge-cloud](https://github.com/PPrauchner/mini-simulador-edge-cloud)** — simulador de alocação de tarefas em infraestrutura Edge-Cloud, feito como desafio técnico para um processo de bolsa. `Python`
 
-<div align="center">
-<sub>Perfil em construção — sempre aprendendo algo novo 🚀</sub>
-</div>
+---
+
+## ⚙️ Como eu trabalho
+
+Trato projeto pequeno com o mesmo processo de projeto grande — é isso que faz outra pessoa (ou eu, três meses depois) conseguir entrar nele.
+
+- **Issues e pull requests mesmo em projeto solo.** Nos últimos 12 meses: ~1.200 contribuições, 52 PRs e 205 issues.
+- **Decisões escritas.** Cada projeto tem um `CONTEXT.md` com o modelo de domínio e ADRs em `docs/adr/` registrando as decisões e seus porquês — é a fonte da verdade antes de implementar.
+- **Commits atômicos** e convenções de código versionadas junto do projeto.
+- **Automação do próprio fluxo.** Mantenho em [`.claude-generica`](https://github.com/PPrauchner/.claude-generica) as skills, hooks e regras que uso para padronizar revisão de PR, abertura de issues e commits. Foi essa base que adaptei para organizar o trabalho da equipe no SAGA.
+
+---
+
+## 🛠️ Stack
+
+**Backend**  Python · FastAPI · Firebase
+
+**Front-end**  TypeScript · React · Astro · HTML/CSS
+
+**Dados & IA**  integração com LLMs (Groq/Llama) · análise de AST · Streamlit · Plotly
+
+**Práticas**  Git · issues e code review · pytest · uv · ADRs
+
+---
+
+## 📫 Contato
+
+Buscando estágio em desenvolvimento, **em Alegrete/RS ou remoto**. Curso noturno — disponibilidade durante o dia.
+
+**[LinkedIn](https://www.linkedin.com/in/pietroprauchner/)** · **[E-mail](mailto:pietro.mprauchner@gmail.com)** · **[Currículo Lattes](http://lattes.cnpq.br/8153919281360932)**
