@@ -68,7 +68,7 @@ Trato projeto pequeno com o mesmo processo de projeto grande — é isso que faz
 - **Issues e pull requests mesmo em projeto solo.** Nos últimos 12 meses: ~1.200 contribuições, 52 PRs e 205 issues.
 - **Decisões escritas.** Cada projeto tem um `CONTEXT.md` com o modelo de domínio e ADRs em `docs/adr/` registrando as decisões e seus porquês — é a fonte da verdade antes de implementar.
 - **Commits atômicos** e convenções de código versionadas junto do projeto.
-- **Automação do próprio fluxo.** Mantenho em [`.claude-generica`](https://github.com/PPrauchner/.claude-generica) as skills, hooks e regras que uso para padronizar revisão de PR, abertura de issues e commits. Foi essa base que adaptei para organizar o trabalho da equipe no SAGA.
+- **Automação do próprio fluxo.** Mantenho o [**ARK — Agent Rules Kit**](https://github.com/PPrauchner/ARK-Agent-Rules-Kit), template com as skills, hooks e regras que uso para padronizar revisão de PR, abertura de issues e commits entre projetos. Foi essa base que adaptei para organizar o trabalho da equipe no SAGA.
 
 ---
 
