@@ -46,7 +46,7 @@ Projeto *Educador 5.0: Capacitação de Professores para o Uso de Inteligência 
 
 ### [SAGA — Sistema de Acompanhamento e Gestão Acadêmica](https://github.com/PPrauchner/SAGA-Sistema-de-Acompanhamento-e-Gestao-Academica)
 
-<img src="https://raw.githubusercontent.com/PPrauchner/SAGA-Sistema-de-Acompanhamento-e-Gestao-Academica/development/docs/assets/m1-prorrogacao-coordenacao.png" alt="Tela do SAGA: coordenação analisando um pedido de prorrogação" width="100%">
+<img src="https://raw.githubusercontent.com/PPrauchner/SAGA-Sistema-de-Acompanhamento-e-Gestao-Academica/development/docs/assets/m1-prorrogacao-coordenacao.png" align="right" width="45%" alt="Tela do SAGA: coordenação analisando um pedido de prorrogação">
 
 Sistema de gestão para programas de pós-graduação: cadastro de discentes, plano de trabalho, validação de créditos, prorrogações e relatórios gerenciais. Projeto em equipe de 6 pessoas, com um **motor de inferência lógica construído do zero em Python** e **Programação Orientada a Aspectos** para autorização, auditoria e alertas.
 
@@ -54,20 +54,11 @@ Sistema de gestão para programas de pós-graduação: cadastro de discentes, pl
 
 `Python` `FastAPI` `Firestore` `pytest`
 
+<br clear="all">
+
 ### [distributed-wagering-processor — processador de transações de apostas](https://github.com/PPrauchner/distributed-wagering-processor)
 
-```mermaid
-flowchart LR
-    P[Provedor de jogos] -->|HTTP| API[API HTTP]
-    P -->|SQS| IN[wager-transactions.fifo]
-    IN --> C[Consumidor SQS]
-    API --> UC[Mesmo use case]
-    C -->|"dedup por inbox"| UC
-    UC -->|"1 transação SQL:<br/>lock da carteira + inbox + outbox"| DB[(PostgreSQL 17)]
-    DB --> PUB[Publicador da outbox]
-    PUB -->|"at-least-once"| EV[wagering-events.fifo]
-    C -.->|"falha permanente ou<br/>retries esgotados"| DLQ[wager-transactions-dlq.fifo]
-```
+<img src="assets/wagering.svg" align="left" width="45%" alt="Arquitetura do wagering: HTTP e SQS no mesmo use case, uma transação SQL com lock, inbox e outbox, publicação at-least-once e DLQ">
 
 Serviço que processa transações de apostas (`BET`, `WIN`, `LOSS`, `REFUND`, `ROLLBACK`) de vários provedores, por HTTP e por fila SQS, mantendo saldo e livro-razão consistentes sob concorrência e reentrega.
 
@@ -82,15 +73,19 @@ Serviço que processa transações de apostas (`BET`, `WIN`, `LOSS`, `REFUND`, `
 
 `TypeScript` `Bun` `NestJS` `MikroORM` `PostgreSQL` `SQS` `Docker` `GitHub Actions`
 
+<br clear="all">
+
 ### [ORÁCULO — auditoria de dependências Python](https://github.com/PPrauchner/Oraculo)
 
-<img src="https://raw.githubusercontent.com/PPrauchner/Oraculo/main/docs/assets/report.png" alt="Relatório do Oráculo auditando o próprio repositório" width="100%">
+<img src="https://raw.githubusercontent.com/PPrauchner/Oraculo/main/docs/assets/report.png" align="right" width="45%" alt="Relatório do Oráculo auditando o próprio repositório">
 
 Ferramenta web que cruza o que um projeto **declara** depender (`pyproject.toml`, `requirements.txt`, `environment.yml`) com o que o código **realmente importa**, via análise de AST, e confronta os dois com o PyPI. Reporta *Zumbis* (declaradas e nunca usadas), *Fantasmas* (importadas e nunca declaradas) e desatualizadas, com métricas de tamanho, idade e um Índice de Saúde.
 
 > **Meu papel:** projetei o **núcleo desacoplado da interface** e defini os **parsers registrados por decorador**, as decisões de arquitetura em ADRs, a internacionalização (pt/en) e a suíte de testes. Projeto praticamente solo: 227 dos 238 commits.
 
 `Python` `Streamlit` `Plotly` `AST` `uv`
+
+<br clear="all">
 
 ---
 

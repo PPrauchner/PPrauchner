@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="720" viewBox="0 0 680 720" role="img" aria-label="distributed-wagering-processor architecture: HTTP and SQS into one use case, one SQL transaction with lock, inbox and outbox, at-least-once publishing and DLQ">
+  <title>distributed-wagering-processor architecture: HTTP and SQS into one use case, one SQL transaction with lock, inbox and outbox, at-least-once publishing and DLQ</title>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6e7681"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="720" rx="16" fill="#0d1117"/>
+  <rect width="680" height="720" rx="16" fill="url(#grid)"/>
+
+  <path d="M300 86.0 L190 145.0" fill="none" stroke="#6e7681" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="222" y="122" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">HTTP</text>
+  <path d="M380 86.0 L480 145.0" fill="none" stroke="#6e7681" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="458" y="122" text-anchor="start" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">SQS</text>
+  <path d="M500 201.0 V255.0" fill="none" stroke="#6e7681" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M170 201.0 V370.0" fill="none" stroke="#6e7681" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M440 311.0 L250 370.0" fill="none" stroke="#6e7681" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="330" y="330" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">inbox dedup</text>
+  <path d="M500 311.0 V380.0" fill="none" stroke="#6e7681" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+  <text x="514" y="335" text-anchor="start" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">permanent failure or</text>
+  <text x="514" y="355" text-anchor="start" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">retries exhausted</text>
+  <path d="M170 426.0 V491" fill="none" stroke="#6e7681" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="186" y="460" text-anchor="start" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">1 SQL transaction:</text>
+  <text x="186" y="480" text-anchor="start" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">wallet lock + inbox + outbox</text>
+  <path d="M170 575 V625.0" fill="none" stroke="#6e7681" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M280 655 H411" fill="none" stroke="#6e7681" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="346" y="643" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">at-least-once</text>
+  <rect x="210.0" y="34.0" width="260" height="52" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="340" y="66.7" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#e6edf3">Game provider</text>
+  <rect x="60.0" y="149.0" width="220" height="52" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="170" y="181.7" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#e6edf3">HTTP API</text>
+  <rect x="350.0" y="149.0" width="300" height="52" rx="26.0" fill="#0b1f3f" stroke="#38bdf8" stroke-width="2"/>
+  <text x="500" y="180.6" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="16" fill="#bfdbfe">wager-transactions.fifo</text>
+  <rect x="390.0" y="259.0" width="220" height="52" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="500" y="291.6" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#e6edf3">SQS consumer</text>
+  <rect x="60.0" y="374.0" width="220" height="52" rx="8" fill="#1d4ed8" stroke="#38bdf8" stroke-width="2"/>
+  <text x="170" y="406.6" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#ffffff">Same use case</text>
+  <rect x="345.0" y="384.0" width="310" height="52" rx="26.0" fill="#161b22" stroke="#6e7681" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="500" y="415.6" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="16" fill="#8b949e">wager-transactions-dlq.fifo</text>
+  <path d="M65.0 505.0 A105.0 10 0 0 0 275.0 505.0 V575.0 A105.0 10 0 0 1 65.0 575.0 Z" fill="#1d4ed8" stroke="#38bdf8" stroke-width="2"/>
+  <ellipse cx="170" cy="505.0" rx="105.0" ry="10" fill="#2563eb" stroke="#38bdf8" stroke-width="2"/>
+  <text x="170" y="554" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff">PostgreSQL 17</text>
+  <rect x="60.0" y="629.0" width="220" height="52" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="170" y="661.6" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#e6edf3">Outbox publisher</text>
+  <rect x="415.0" y="629.0" width="240" height="52" rx="26.0" fill="#0b1f3f" stroke="#38bdf8" stroke-width="2"/>
+  <text x="535" y="660.6" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="16" fill="#bfdbfe">wagering-events.fifo</text>
+</svg>
