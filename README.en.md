@@ -1,6 +1,6 @@
 <div align="center">
 
-# Pietro Prauchner
+<img src="assets/banner.en.svg" alt="Pietro Prauchner — backend · AI agents" width="100%">
 
 ### Full-stack developer focused on backend and development with AI agents
 
