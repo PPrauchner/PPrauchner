@@ -1,6 +1,6 @@
 <div align="center">
 
-# Pietro Prauchner
+<img src="assets/banner.svg" alt="Pietro Prauchner — backend · agentes de IA" width="100%">
 
 ### Desenvolvedor full-stack com foco em backend e desenvolvimento com agentes de IA
 

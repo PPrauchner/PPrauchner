@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Pietro Prauchner: backend · agentes de IA">
+  <title>Pietro Prauchner: backend · agentes de IA</title>
+  <style>
+    text{font-family:'Segoe UI', Helvetica, Arial, sans-serif}
+    .pop{transform-box:fill-box;transform-origin:center}
+    #all{animation:fade 20s linear infinite}
+    @keyframes fade{0%,96.00%{opacity:1}100%{opacity:0}}
+    @keyframes dmain{0%,0.00%{stroke-dashoffset:1}5.00%,100%{stroke-dashoffset:0}}
+    @keyframes dbranch{0%,5.00%{stroke-dashoffset:1}10.00%,100%{stroke-dashoffset:0}}
+    @keyframes pmerge{0%,10.00%{opacity:0;transform:scale(0)}10.75%{opacity:1;transform:scale(1.35)}11.50%,100%{opacity:1;transform:scale(1)}}
+    @keyframes aname{0%,10.75%{opacity:0}13.50%,100%{opacity:1}}
+    @keyframes fw1{0%,14.00%{opacity:0}15.00%,18.50%{opacity:1}19.50%,100%{opacity:0}}
+    @keyframes fw2{0%,19.50%{opacity:0}20.50%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+    @keyframes afinal{0%,25.00%{opacity:0}27.50%,100%{opacity:1}}
+    #main{animation:dmain 20s linear infinite}
+    #branch{animation:dbranch 20s ease-in-out infinite}
+    #merge{animation:pmerge 20s ease-out infinite}
+    #name{animation:aname 20s ease-out infinite}
+    #w1{animation:fw1 20s ease infinite}
+    #w2{animation:fw2 20s ease infinite}
+    #final{animation:afinal 20s ease-out infinite}
+    @keyframes pm0{0%,1.75%{opacity:0;transform:scale(0)}2.50%{opacity:1;transform:scale(1.35)}3.25%,100%{opacity:1;transform:scale(1)}}
+    #m0{animation:pm0 20s ease-out infinite}
+    @keyframes pm1{0%,2.50%{opacity:0;transform:scale(0)}3.25%{opacity:1;transform:scale(1.35)}4.00%,100%{opacity:1;transform:scale(1)}}
+    #m1{animation:pm1 20s ease-out infinite}
+    @keyframes pm2{0%,3.25%{opacity:0;transform:scale(0)}4.00%{opacity:1;transform:scale(1.35)}4.75%,100%{opacity:1;transform:scale(1)}}
+    #m2{animation:pm2 20s ease-out infinite}
+    @keyframes pm3{0%,4.00%{opacity:0;transform:scale(0)}4.75%{opacity:1;transform:scale(1.35)}5.50%,100%{opacity:1;transform:scale(1)}}
+    #m3{animation:pm3 20s ease-out infinite}
+    @keyframes pb0{0%,6.75%{opacity:0;transform:scale(0)}7.50%{opacity:1;transform:scale(1.35)}8.25%,100%{opacity:1;transform:scale(1)}}
+    #b0{animation:pb0 20s ease-out infinite}
+    @keyframes pb1{0%,7.75%{opacity:0;transform:scale(0)}8.50%{opacity:1;transform:scale(1.35)}9.25%,100%{opacity:1;transform:scale(1)}}
+    #b1{animation:pb1 20s ease-out infinite}
+    @keyframes pb2{0%,8.75%{opacity:0;transform:scale(0)}9.50%{opacity:1;transform:scale(1.35)}10.25%,100%{opacity:1;transform:scale(1)}}
+    #b2{animation:pb2 20s ease-out infinite}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" rx="16" fill="#0d1117"/>
+  <rect width="1200" height="300" rx="16" fill="url(#grid)"/>
+
+  <g id="all">
+    <!-- main (cinza) e a branch (azul do ARK) que volta por merge -->
+    <path id="main" d="M80 232 H1120" pathLength="1" stroke-dasharray="1" fill="none" stroke="#6e7681" stroke-width="3" stroke-linecap="round"/>
+    <path id="branch" d="M700 232 C 750 232, 740 152, 790 152 H 970 C 1020 152, 1010 232, 1060 232" pathLength="1" stroke-dasharray="1" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <circle id="m0" class="pop" cx="180" cy="232" r="7" fill="#0d1117" stroke="#6e7681" stroke-width="3"/>
+    <circle id="m1" class="pop" cx="330" cy="232" r="7" fill="#0d1117" stroke="#6e7681" stroke-width="3"/>
+    <circle id="m2" class="pop" cx="480" cy="232" r="7" fill="#0d1117" stroke="#6e7681" stroke-width="3"/>
+    <circle id="m3" class="pop" cx="620" cy="232" r="7" fill="#0d1117" stroke="#6e7681" stroke-width="3"/>
+    <circle id="b0" class="pop" cx="810" cy="152" r="9" fill="#1d4ed8" stroke="#38bdf8" stroke-width="3"/>
+    <circle id="b1" class="pop" cx="880" cy="152" r="9" fill="#1d4ed8" stroke="#38bdf8" stroke-width="3"/>
+    <circle id="b2" class="pop" cx="950" cy="152" r="9" fill="#1d4ed8" stroke="#38bdf8" stroke-width="3"/>
+    <circle id="merge" class="pop" cx="1060" cy="232" r="15" fill="#1d4ed8" stroke="#ffffff" stroke-width="3"/>
+
+    <text id="name" x="80" y="124" font-size="64" font-weight="800" letter-spacing="1" fill="#ffffff">Pietro Prauchner</text>
+    <text id="w1" x="82" y="186" font-size="30" fill="#bfdbfe" opacity="0">backend</text>
+    <text id="w2" x="82" y="186" font-size="30" fill="#bfdbfe" opacity="0">agentes de IA</text>
+    <text id="final" x="82" y="186" font-size="30" fill="#bfdbfe">backend <tspan fill="#38bdf8">·</tspan> agentes de IA</text>
+  </g>
+</svg>
